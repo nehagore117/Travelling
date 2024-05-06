@@ -1,0 +1,61 @@
+<html>
+    <body>
+        <div>
+            using getElementByIdTagName()
+        </div>
+        <div>
+            using getElementByIdTagName()
+        </div>
+        <div>
+            using getElementByIdTagName()
+        </div>
+        <button onclick="getData()">GET CONTENTS</button>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+        <button onclick="getTags()">GET ALL TAGS</button>
+        <br><br> 
+        <button onclick="addNewRowToTable()">GET TABLE</button>
+        <table id="tab"></table>
+        <script>
+
+            function getData()
+            {
+                let d= document.getElementsByTagName('div')
+               
+               for(let element of d )
+               {
+                   element.style.fontFamily='Arial'
+                   element.style.fontSize='20px'
+                }
+           }
+           function getTags()
+           {
+               let temp=document.querySelectorAll('p')
+               for(let element of temp)
+               {
+                   element.innerHTML='<h2>ALL Paragraphs are selected using querySelectorAll</h2>'
+               }
+           }
+           function addNewRowToTable()
+           {
+               let cnt=1
+               let r=''
+               let table=document.getElementById('tab')
+  // let mainDisp=document.getElementById('main') // No such element in your HTML
+  if(cnt==1)
+                {
+                    table.setAttribute('border','1')
+                    table.setAttribute('width','80%')
+                }
+                r=document.createElement('tr')
+                r.setAttribute('id',cnt)
+                r.innerHTML='<td>First Column</td><td>Second Column</td><td>Third Column</td>'
+                cnt++
+                table.append(r)
+                // mainDisp.append(table) // No such element in your HTML
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,256 @@
+18/03/2024
+Javascript (JS)
+Till 2009 -- client side scripting
+from 2009 -- JS is used as server side(Node.Js) as well as client side
+
+file extension
+<script src=""></script>
+
+What is Js?
+-   It is scripting language which is used in web - development(frontend and backend)
+-   It is interperated language
+-   It is untyped language
+-   It is oop language
+
+Variable
+syntax
+    var no//untype Variable
+    console.log(no) //undefined
+
+    no=10 //number type
+
+    data type
+    number 
+    string
+    boolean
+    date
+    undefined
+    object
+
+    document.write() :- shows output on browser window
+    console.log() :- shows output on browser console
+    alert():- It shows popup model window on screen
+
+    Assignement:-
+    1. Accept no from user and print fronted mathematical table of a no without using?
+    2. Accept no from user and check that no is odd or even?
+    3. Accept no from user and print factors of a no?
+
+    19/03/2024
+    Assignement:-
+    1. Accept no from user and display reverse of a no.
+    2. Accept no from user and find digit sum of entered no.
+    3. Accept no from user and check it is prime no or not.
+    4. Accept no from user and check no is armstrong no or not. 
+
+    20/03/24
+    Assignement:-
+    1.Accept string from user and print reverse of string.
+    2.Accept string from user and print word by word reverse of a string.
+    3.Accept string from user and count total no of characters , words, space and line from a string.
+    4. Acc0ept string from user and checkif it is plaindrome or not.
+    5.Accept string from user findout the longest words from the string.
+    6. Accept the two string from user and check whether same or not // dount use any standarlized function.
+
+    21/03/2024
+    1.Write a Javascript progarm to check whether an 'input' is a string or not.
+    2.Write a Javascript progarm to print a string that has letters in alphabetical order
+    3.Write a Javascript progarm that accepts a string and converts the first letter of each word into upper case.
+    4.check entered character is digit or character or special symbol. 
+
+    26/03/24
+    1.Write a function to check no is prime or not.
+    2.Write a function to check prime no between given range
+        Accept range from user
+    3.Write a function to check no is perfect no or not
+    4.Write a function to convert celsius to Fahrenheit
+    5.Write a function to calculate simple interest based on the principle amount
+    6.Write a function to generate otp(5 or 6 digit)
+
+    27/03/24
+    Array
+    array is Js by deafult it is growable in nature.
+    let arr=[]
+
+    int a[10];
+    a[11]=100
+
+    annoymous function
+    A function without name is called as annoymous function
+    syntax
+    const add=function(){
+
+
+    
+    }
+    or
+    const add=()=>{
+
+    }
+
+
+///////////////////Assignents (27/03/2024)//////////////////////
+
+(1) find the second max from an array (accept array size from user)
+(2) search an element into an array accept serarch eleement from user
+(3) left shif array element by 1
+(4) accept element into two different array perform addition of the array and store it inside another array print output
+(5) accept 10 element in an array find all even number from the array and store it insind the 'EVEN'array and find all odd element and store inside the 'odd' arrayand last print all even number followed by odd number
+(6) accept 7 element in an array find element is prime or not if it isnprime number then store it in another array and display all prime number
+(7) accept 10 element in an array perform addition of an array element with adjustment index if addition is prime number then swap eleement.
+    // eg: [3 4 6 8 10 20 4 5]
+(8) accept array eleemntfros user and reverce the array //imp
+(9) Accept 10 nos in array and swap array elements.
+//Note : do not use sorting . do not use any other array. do not reverse an array
+////////eg: consider following array
+[10 20 30 40 3 5 1 9 3 1]
+//after swap elements array will between
+//////[1 3 9 1 5 3 40 30 20 10]
+
+
+////////////////////////////////1/04/24////////////////////////////////////////////
+
+Array Built - in functions
+push(element)- it is used to add element at then end of Array
+pop()- remove array element from end.
+shift()- remove elementfrom start of an array.
+
+concat()- join second array into first array and returns new array
+reverse()- reverse existing array
+splice(index,no_of_ele_to_remove,element)- allow to add element and remove element from index.
+
+splice(start_index, end_index)-returns sub array between start index and end-1 index
+sort()-sort array elements in ascending order
+join(delimiter)-convert array into string base on given delimiter.
+tostring()- converts array into string
+map()
+filter()
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Html tag language
+HTML------------>OBJ--------------->HTML
+HTML-------------->DOM------------->JS
+HTML<--------------DOM<-------------JS
+getElementbyId(id)
+
+innerHTMl---iT WILL ALLOW YOU TO SET CONTEN TO HTML ELEMENT THROUGH JS
+innerText--IT WILL RETRIVE TEXT OF HTML ELEMENT
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Assignement
+
+1.Using checkbox give option as 'Bold','Italic' and 'Underline'
+    When user select any option then text should get effect and when user uncheck any option effect will be removed.
+2.Change font,font size and color when user select specific font or font-size or color.(use dropdown list)
+3. create a calculator-perform add,sub,divide,multiply and mod operations using single function only
+4. create a login from and check login is correct or incorrect if login is valid then show message in green color as 'login Successful' 
+otherwise  shoe message as 'Invaild login' in red color.
+
+/////////////////////////////////////////////////////////////////
+
+2/04/24
+DOM(Document object Mode)
+By using DOM javascript is able to communicate with html. To communicate between  js and Html some software us required and that software is
+nothing but Dom.
+Dom is always in-between javascript and HTML.
+
+QuerySelctor-
+It is used to select any tag from HTML t javascript,
+Syntax
+    Document.QuerySelctor('tag name);
+    Eg:
+Document.QuerySelctor('p');
+It will select first paragraph from current html page.
+QuerySelctorAll- If we want to select all available element from a page then we can use QuerySelctorAll() method
+Eg
+    Document.QuerySelctor('div')
+it will give all available div tag from web page.
+DOM Important attributes
+1.document.head
+2.document.links
+3.document.body
+4.document.Url
+
+Important DOM method
+1.getElementbyId('id name') ---html based
+2.getElementbyClassName('class name)---html based
+
+eg: When we are having multiple elements with same class name then we have to use index of class
+
+document.getElementbyClassName('first')[0].
+In above example even if multiple elements having same class name still js will return only 0th element.
+
+3.getElementsByTagName('tagg name')---htnl based
+4.QuerySelctor()-base on CSS selector using css id we can get particular element (use # before css id.
+5.QuerySelctorAll()--based on CSS selector to use CSS class we have to use before class name)
+From javascript using DOM we can change content of html also textContent and inner html.
+When we use textContent property then we can set any text to any tag i.e text contents can be change but if we want to change and tag
+text to link then we can't use textContent property. As it only changes text not html property.
+To change text to link we can use innerHTMlproperty.
+From js using Dom we also able to change attributes of any element.
+Methods used to change attributes are getAttribute.
+Methods used to change attributes are getAttribute.
+a1.setAttribute('herf','https://yahoomail.com');
+
+createElement('element name')-is used to create any Html element at runtime
+
+Assignement
+1. Accept first name,middle name and last name from user using textbox add record into table.
+2.Calculate area of circle, square and rectangle when user select any of the given option then required tectbox should be visible and display 
+area of user selected option.(use radio button)
+3.create to section tag in which one section tag text will be set to another section tag when user click on any section tag.
+4. create a tag only and using Dom set href and target attributes to a tag.
+
+
+
+///////////////////04/04/2024///////////////////////////////
+higher  order functions
+setinterval(function,time in as)
+
+setTimout()
+clearInterval(process id)
+
+Assignement
+1.Display width on screen.
+2.create a stop eatch
+start,stop and reset.
+
+Data function
+
+Number function
+to Fixed()
+tostring(radix)
+radix-2, 8, 10,16
+
+
+/////////////////////////////////////05/04/2024/////////////////////////////////
+fetch() API
+Syntax:
+fetch(URL,{
+    method: GET /Post/ PUT/ PATCH/ DELETE 
+    body:
+})
+
+//getting data from server
+GET(URL)
+GET(URL+UniqueId)
+
+sending data to server for further processing
+Post(URL,data)
+
+update existing data from server
+post(URL,id,data)
+patch(URL+id,data)
+
+to remove data from server
+DELETE(URL+ID)
+use of fetch()API
+Used to send request to server for data
+
+Client machine browser will send request to server will process request
+and based on request after processing server will send a response(data)
+
+URL
+https:

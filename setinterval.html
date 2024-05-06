@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnshow">DTSPLAY</button>
+    <button onclick="stopmsg()">STOP DISPLAY</button>
+<button onclick="stop()">FINISH</button>
+<div id="disp>"></div>
+<script>
+    let pid=0
+    let cnt=1;
+    function stop()
+    {
+        setTimeout(saybye,4000)
+    }
+    function sayhello()
+    {
+        document.write('disp').innerHTML='hello....+cnt++'
+
+    }
+    function showmessage()
+    {
+        pid=setInterval(sayhello,2000)
+    }
+    let btn=document.getElementById('btnShow')
+            btn.addEventListener('click',(event)=>{
+                showMessage()
+            })
+            function stopMsg(){
+                clearInterval(pid)
+            }
+            function sayBye()
+            {
+                alert('bye bye,,,,')
+            }
+</script>
+</body>
+</html>

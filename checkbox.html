@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">checkbox <style></style></p>
+    <label><input type="checkbox" id="boldcheckbox" onchange="updatestyles()">BOLD</label>
+    <label><input type="checkbox" id="italicheckbox" onchange="updatestyles()">ITALIC</label>
+    <label><input type="checkbox" id="UNDERLINE" onchange="updatestyles()">UNDERLINE</label>
+    <script>
+        function updatestyles(){
+            let textElement  = document.getElementById('text');
+            let isBold = document.getElementById('boldcheckbox').Checked;
+            let isItalic= document.getElementById('italicheckbox').checked;
+
+
+            textElement.style.fontWeight=isbold ? 'bold' : 'normal';
+            textElement.style.fontStyle=isItalic ? 'italic' : 'normal';
+            textElement.style.textDecoration=isunderline ? 'underline' : 'none';
+            
+        }
+    </script>
+</body>
+</html>

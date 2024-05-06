@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <button onclick="setcontent()">set content</button>
+    <div id="d"></div>
+    <div id="disp">using innerTEXT proprty of DOM we can get content of any tag</div>
+<script>
+    function setcontent()
+    {
+        let div=document.getElementById('d')
+        div.innerHTML='welcome'
+        div.setAttribute('style','background-color:green')
+        div.style.backgroundColor='blue'
+    }
+    let txt=document.getElementById('disp').innerText
+    alert(txt)
+</script>
+</body>
+</html>
